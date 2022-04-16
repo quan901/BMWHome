@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <fragment
+        android:id="@+id/left"
+        android:name="com.itcast.bmwhome.LeftFragment"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:layout="@layout/left_layout"/>
+    <fragment
+        android:id="@+id/right"
+        android:name="com.itcast.bmwhome.RightFragment"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:layout="@layout/right_layout"/>
+
+
+</LinearLayout>
